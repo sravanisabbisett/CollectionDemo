@@ -13,6 +13,9 @@ namespace CollectionsDemo
             Console.WriteLine("Stackdemo");
             collections.Stackdemo();
             Console.ReadKey();
+            Console.WriteLine("----------");
+            Console.WriteLine("Queuedemo");
+            collections.QueueDemo();
         }
     }
 }

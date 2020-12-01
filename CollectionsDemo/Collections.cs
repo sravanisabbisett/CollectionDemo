@@ -53,5 +53,30 @@ namespace CollectionsDemo
             myStack.Clear();
             Console.WriteLine("total elements present in stack after clearing all  elements::" + myStack.Count);
         }
+
+        public void QueueDemo()
+        {
+            Queue queue = new Queue();
+            //adding element in queue
+            queue.Enqueue("sravani");
+            queue.Enqueue("Rupika");
+            queue.Enqueue("lakshmi");
+            queue.Enqueue("sailaja");
+            foreach (var element in queue)
+                Console.WriteLine(element);
+            //counting number of elements in queue
+            Console.WriteLine("Total number of elements present in queue is::" + queue.Count);
+            //removing topmost element in queue
+            Console.WriteLine("Removing top most element in queue::" + queue.Dequeue());
+            Console.WriteLine("Total number of elements after removing one element::" + queue.Count);
+            //getting topmost element in queue
+            Console.WriteLine("Printng top most element in queue::" + queue.Peek());
+            //checking element is present or not in queue
+            Console.WriteLine("Checking element is present or not::" + queue.Contains("sailaja"));
+            //clearing all elents in queue
+            queue.Clear();
+            Console.WriteLine("Total number of elements after clearing the queue::" + queue.Count);
+
+        }
     }
 }
