@@ -9,6 +9,9 @@ namespace CollectionsDemo
             Collections collections = new Collections();
             Console.WriteLine("ListDemo");
             collections.ListDemo();
+            Console.WriteLine("----------");
+            Console.WriteLine("Stackdemo");
+            collections.Stackdemo();
             Console.ReadKey();
         }
     }

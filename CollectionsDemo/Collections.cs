@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -27,6 +28,30 @@ namespace CollectionsDemo
             Console.WriteLine("counting the list of elements after removing::" + names.Count);
 
 
+        }
+
+        public void Stackdemo()
+        {
+            Stack myStack = new Stack();
+            //add element in stack
+            myStack.Push("sravani");
+            myStack.Push("Rupika");
+            myStack.Push("lakshmi");
+            myStack.Push("sailaja");
+            foreach (var element in myStack)
+                Console.WriteLine(element);
+            //counting all elements in stack
+            Console.WriteLine("total elements present in stack is::" + myStack.Count);
+            //removing topmost element
+            Console.WriteLine("Top most element present in stack::" + myStack.Pop());
+            Console.WriteLine("total elements present in stack after poping one element" + myStack.Count);
+            //printing topmost element in stack
+            Console.WriteLine("TopMost present in stack is::" + myStack.Peek());
+            bool reslt = myStack.Contains("Rupika");
+            Console.WriteLine("elemnet present in stack::" + reslt);
+            //clearing the stack
+            myStack.Clear();
+            Console.WriteLine("total elements present in stack after clearing all  elements::" + myStack.Count);
         }
     }
 }
