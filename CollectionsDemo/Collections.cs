@@ -78,5 +78,33 @@ namespace CollectionsDemo
             Console.WriteLine("Total number of elements after clearing the queue::" + queue.Count);
 
         }
+
+        public void DictionaryDemo()
+        {
+            Dictionary<int, String> My_dict = new Dictionary<int, string>();
+            My_dict.Add(1, "sravani");
+            My_dict.Add(2, "sailaja");
+            My_dict.Add(3, "Akhilesh");
+            My_dict.Add(4, "nadh");
+
+            //printing the elements in dictionay
+            foreach (KeyValuePair<int, string> ele in My_dict)
+            {
+                Console.WriteLine("{0} and {1}",
+                            ele.Key, ele.Value);
+            }
+
+            //Removing element in dictionaty
+            Console.WriteLine("Counting the Number of elements Before removing::" + My_dict.Count);
+            My_dict.Remove(1);
+            Console.WriteLine("Counting the Number of elements after removing::"+My_dict.Count);
+            var result=My_dict.ContainsKey(2);
+            Console.WriteLine("Checking if the key is present or not::"+result);
+            var valueResult = My_dict.ContainsValue("sailaja");
+            Console.WriteLine("Checking if the value is present or not::" + valueResult);
+            My_dict.Clear();
+            Console.WriteLine("Counting the Number of elements after clearing the dictionary::" + My_dict.Count);
+
+        }
     }
 }

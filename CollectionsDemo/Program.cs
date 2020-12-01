@@ -12,10 +12,15 @@ namespace CollectionsDemo
             Console.WriteLine("----------");
             Console.WriteLine("Stackdemo");
             collections.Stackdemo();
-            Console.ReadKey();
             Console.WriteLine("----------");
             Console.WriteLine("Queuedemo");
             collections.QueueDemo();
+            Console.WriteLine("------------");
+            Console.WriteLine("Dictionary Demo");
+            collections.DictionaryDemo();
+
+            Console.ReadKey();
+
         }
     }
 }
